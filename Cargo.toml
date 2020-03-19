@@ -1,0 +1,20 @@
+[package]
+name = "heartbeat"
+version = "0.1.0"
+authors = ["Russell Hay <russell.hay@gmail.com>"]
+edition = "2018"
+default-run = "beater"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rosc = "0.3.0"
+clap = "2.33.0"
+
+[[bin]]
+name = "test_artwork"
+path = "src/test/artwork.rs"
+
+[[bin]]
+name = "beater"
+path = "src/main.rs"
